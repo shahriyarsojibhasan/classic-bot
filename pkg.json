@@ -1,6 +1,6 @@
-"name": "SHAHRIYAR SOJIB HASAN",
-	"version": "V4",
-	"description": "MADE BY SHAHRIYAR SOJIB HASAN",
+"name": "SHAHRIYAR-KING",
+	"version": "4.0.0"
+	"description": "Made By Shahriyar Sojib Hasan."
 	"main": "mirai.js",
 	"scripts": {
 		"start": "node index",
