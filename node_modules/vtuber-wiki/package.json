@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      "vtuber-wiki@1.1.5",
+      "/home/runner/neemei"
+    ]
+  ],
+  "_from": "vtuber-wiki@1.1.5",
+  "_id": "vtuber-wiki@1.1.5",
+  "_inBundle": false,
+  "_integrity": "sha512-oIYI8bmFO/4tZpzk0guBUP1y7cGTSrkssilq1LPMmp+VgTrl2DXpvg/n+Z7il8CJLjCmG6wgoupvgnJ13yUnZw==",
+  "_location": "/vtuber-wiki",
+  "_phantomChildren": {
+    "follow-redirects": "1.14.8"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "vtuber-wiki@1.1.5",
+    "name": "vtuber-wiki",
+    "escapedName": "vtuber-wiki",
+    "rawSpec": "1.1.5",
+    "saveSpec": null,
+    "fetchSpec": "1.1.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/vtuber-wiki/-/vtuber-wiki-1.1.5.tgz",
+  "_spec": "1.1.5",
+  "_where": "/home/runner/neemei",
+  "author": {
+    "name": "TentacleSama:3"
+  },
+  "bugs": {
+    "url": "https://github.com/TentacleSama4254/vTuber-wiki/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "hermitpurple": "^0.2.0"
+  },
+  "description": "vTuber info scapper for wiki",
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/TentacleSama4254/vTuber-wiki#readme",
+  "keywords": [
+    "vtuber",
+    "hololive",
+    "nijisanji",
+    "wiki",
+    "scrapper",
+    "fandom"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "name": "vtuber-wiki",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TentacleSama4254/vTuber-wiki.git"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "prepublish": "npm run build",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "test": "npm test"
+  },
+  "types": "dist",
+  "version": "1.1.5"
+}
