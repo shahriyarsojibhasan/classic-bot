@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      "nhentai-api@3.4.3",
+      "/home/runner/neemei"
+    ]
+  ],
+  "_from": "nhentai-api@3.4.3",
+  "_id": "nhentai-api@3.4.3",
+  "_inBundle": false,
+  "_integrity": "sha512-IPzoB9/GRVF/wofyao6SfpFIak2GyE8+4F7ipDJXK/vmxV3QPa+7E7+cst2zsXis5j9Yxk3Cf/zodktaM9UU9w==",
+  "_location": "/nhentai-api",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "nhentai-api@3.4.3",
+    "name": "nhentai-api",
+    "escapedName": "nhentai-api",
+    "rawSpec": "3.4.3",
+    "saveSpec": null,
+    "fetchSpec": "3.4.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nhentai-api/-/nhentai-api-3.4.3.tgz",
+  "_spec": "3.4.3",
+  "_where": "/home/runner/neemei",
+  "author": {
+    "name": "Zekfad",
+    "email": "zekfad@znnme.eu.org",
+    "url": "https://zekfad.znnme.eu.org"
+  },
+  "bugs": {
+    "url": "https://github.com/Zekfad/nhentai-api/issues",
+    "email": "zekfad@znnme.eu.org"
+  },
+  "description": "nHentai Node.JS API client.",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@webdoc/cli": "^1.5.5",
+    "@zekfad/eslint-config": "^1.0.2",
+    "codecov": "^3.8.3",
+    "eslint": "^8.7.0",
+    "eslint-plugin-import": "^2.25.4",
+    "magic-string": "^0.25.7",
+    "mocha": "^9.1.4",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^15.1.0",
+    "rollup": "^2.64.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^4.5.4"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/bundle.mjs",
+      "require": "./dist/cjs/bundle.cjs",
+      "default": "./dist/esm/bundle.cjs"
+    }
+  },
+  "homepage": "https://zekfad.github.io/nhentai-api/",
+  "keywords": [
+    "r18",
+    "adult",
+    "nhentai",
+    "api"
+  ],
+  "license": "ISC",
+  "main": "./dist/cjs/bundle.cjs",
+  "module": "./dist/esm/bundle.js",
+  "name": "nhentai-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zekfad/nhentai-api.git"
+  },
+  "resolutions": {
+    "**/micromatch": "^4.0.4"
+  },
+  "scripts": {
+    "build": "run-p build:**",
+    "build:def": "tsc",
+    "build:docs": "webdoc --config .webdocrc.json --site-root /nhentai-api --verbose",
+    "build:src": "rollup -c",
+    "coverage": "codecov",
+    "dev": "rollup -c --watch --environment mode:dev",
+    "lint": "eslint . --ext .js,.cjs,.mjs",
+    "test": "nyc --reporter=lcov mocha"
+  },
+  "type": "module",
+  "types": "./types/index.d.ts",
+  "version": "3.4.3"
+}
